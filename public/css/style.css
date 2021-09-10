@@ -1,0 +1,89 @@
+html, body {
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    perspective-origin: 50%;
+    background-color: rgb(87, 121, 141);
+}
+
+.section {
+    display: block;
+    padding: 30px;
+}
+
+.section-1 {
+    height: 500px;
+    background: url(/public/img/granadella-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(4px);
+}
+
+.section-2 {
+    background: rgb(87, 121, 141);
+    height: 300px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
+    color: #ccc;
+    font-size: 24px;
+}
+
+.section-3 {
+    background: #444;
+    height: 500px;
+}
+
+.phone {
+    --size: 40px;
+    background-color: #444;
+    border-radius: calc(var(--size));
+    height: calc(16 * var(--size));
+    width: calc(7.5 * var(--size));
+    text-align: center;
+
+    position: absolute;
+    transform: translate(50px, 100px);
+    z-index: 1;
+}
+
+.phone-screen {
+    background: url(https://picsum.photos/450/800);
+    background-size: cover;
+    border-radius: calc(var(--size)/2);
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    margin: 10%;
+}
+
+.phone-button {
+    background-color: #777;
+    border-radius: 50%;
+    width: calc(var(--size));
+    height: calc(var(--size));
+    display: inline-block;
+    vertical-align: top;
+    margin-top: calc(-0.2 * var(--size));
+}
+
+.download-button {
+    display: inline-block;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.download-button:hover {
+    background-color: dodgerblue;
+}
