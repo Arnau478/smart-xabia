@@ -26,10 +26,8 @@ html, body {
 
 .section-2 {
     background: rgb(87, 121, 141);
-    height: 300px;
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
+    text-align: center;
+    padding: 50px;
     justify-content: center;
     font-family: system-ui;
     color: #ccc;
