@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 html, body {
     margin: 0px;
     position: relative;
@@ -8,6 +10,7 @@ html, body {
     perspective: 10px;
     perspective-origin: 50%;
     background-color: rgb(87, 121, 141);
+    user-select: none;
 }
 
 .section {
@@ -16,7 +19,7 @@ html, body {
 }
 
 .section-1 {
-    height: 500px;
+    height: 50vh;
     background: url(/public/img/granadella-banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -37,6 +40,18 @@ html, body {
 .section-3 {
     background: #444;
     height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.section-4 {
+    background: #222;
+    height: 50px;
+    text-align: center;
+    font-family: system-ui;
+    color: #666;
 }
 
 .phone {
@@ -50,6 +65,8 @@ html, body {
     position: absolute;
     transform: translate(50px, 100px);
     z-index: 1;
+
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 .phone-screen {
@@ -80,8 +97,47 @@ html, body {
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
+    transition: 0.25s;
 }
 
 .download-button:hover {
-    background-color: dodgerblue;
+    transform: translateY(-20px);
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.75);
+}
+
+.galery-item {
+    display: inline-block;
+    width: 200px;
+    height: 320px;
+    text-align: center;
+    margin: 10px;
+}
+
+.galery-item-title {
+    display: block;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 32px;
+    letter-spacing: 2px;
+    height: 40px;
+}
+
+.galery-item-description {
+    color: #ddd;
+    display: block;
+    padding: 4px;
+    font-weight: 100;
+    font-family: system-ui, sans-serif;
+    height: 80px;
+}
+
+.galery-item-img {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: inline-block;
 }
